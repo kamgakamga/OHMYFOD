@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300;1,400;1,700&family=Shrikhand&display=swap');
+
+$couleur_primaire:#9356DC;
+$couleur_secondaire:#FF79DA;
+$couleur_tertiaire:#99E2D0;
+$couleur_blanche:#FFFFFF;
+$couleur_grise:#F2F2F2;
+
+*,
+::before,
+::after{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+}
+
+a{
+        text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h4{
+        font-family: 'Shrikhand', cursive;
+}
+
+img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 300px;
+} 
+
+body{
+        background-color: aquamarine;
+        font-family: 'Roboto Condensed', sans-serif;
+}
+
+.nouveau{
+        background-color: $couleur_tertiaire   
+}
+
+.baniere{
+        &__explorer{
+                background-color: $couleur_secondaire;
+                color: $couleur_blanche;
+        }
+}
+.fonctionnement{
+        background-color: $couleur_blanche;
+        &__chosissez{
+                background-color:$couleur_grise;
+                display: flex;
+                justify-content: space-around;
+                margin: 10px;
+
+        }
+
+}
+.restaurant{
+        background-color:$couleur_grise;
+        .restaurant__br{
+                border-radius: 15px;
+                background-color:$couleur_blanche;
+                &__nouveau{
+                        background-color: $couleur_tertiaire;
+                        display: inline-block;
+                        padding: 10px;
+                }
+        }
+        .palette_text{
+                display: flex;
+                justify-content: space-between;
+        }
+}
+.liens{
+        position: relative;
+        .nouveau{
+                position: absolute;
+                top: 5px;
+                right: 10px;
+        }
+}
