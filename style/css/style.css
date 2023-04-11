@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300;1,400;1,700&family=Shrikhand&display=swap");
+@import url("./header.css");
+@import url("./footer.css");
 *,
 ::before,
 ::after {
@@ -11,11 +13,7 @@ a {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h4 {
+.title {
   font-family: "Shrikhand", cursive;
 }
 
@@ -31,23 +29,76 @@ body {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+.localisation {
+  background-color: #F2F2F2;
+  justify-content: center;
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.localisation__icon {
+  font-size: 14px;
+}
+.localisation__ville {
+  text-align: center;
+  margin-left: 15px;
+}
+
 .nouveau {
   background-color: #99E2D0;
 }
 
+.baniere {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.baniere__title {
+  text-align: center;
+}
+.baniere__paragraphe {
+  text-align: center;
+}
 .baniere__explorer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40%;
+  border-radius: 40px;
+  max-width: 200px;
+  text-align: center;
+  margin-top: 15px;
   background-color: #FF79DA;
   color: #FFFFFF;
 }
 
 .fonctionnement {
   background-color: #FFFFFF;
+  padding: 25px 15px;
 }
 .fonctionnement__chosissez {
   background-color: #F2F2F2;
   display: flex;
   justify-content: space-around;
-  margin: 10px;
+  align-items: center;
+  margin: 10px 0 10px 0px;
+  height: 50px;
+  border-radius: 20px;
+  position: relative;
+}
+.fonctionnement__chosissez__numero {
+  position: absolute;
+  background-color: #9356DC;
+  width: 20px;
+  text-align: center;
+  border-radius: 50%;
+  color: #FFFFFF;
+  padding: 3px;
+  left: -10px;
 }
 
 .restaurant {
