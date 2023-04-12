@@ -11,7 +11,12 @@
         <title>OHMYFOOD</title>
 </head>
 <body>
-        <iframe src="./header_footer/header.html" frameborder="0"></iframe> 
+        <!-- <iframe src="./header_footer/header.html" frameborder="0"></iframe>  -->
+        <header class="header">
+                <div class="header__logo">
+                          <img src="./../img/logo/ohmyfood.png" alt="logo du site ohmyfood" class="header__logo__img">
+                </div>
+        </header>
         <main>
                <section class="localisation">
                         <div class="localisation__icon"><i class="fas fa-map-marker-alt"></i></div>
@@ -47,11 +52,12 @@
                         </div>
                 </section>
                 <section class="restaurant">
+                        <h2 class="restaurant__title">Restaurants</h2>
                         <div class="restaurant__br">
-                                <a class="liens" href="./menu/palete_du_gout.html">
-                                        <div class="restaurant__br__nouveau nouveau">Nouveau</div>
-                                        <div class="palette_img">
-                                                <img src="./img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+                                <a class="restaurant__br__liens" href="./menu/palete_du_gout.html">
+                                        <div class="restaurant__br__liens__nouveau nouveau">Nouveau</div>
+                                        <div class="restaurant__br__liens__palette__img">
+                                                <img class="restaurant__img restaurant__br__liens__palette__img--img" src="./img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
                                         </div>
                                         <div class="palette_text">
                                                 <p>La palette du gout <br>
@@ -64,13 +70,13 @@
                                 </a>
                         </div>
 
-                        <div class="note_enchante">
-                                <a class="liens" href="./menu/note_enchante.html">
-                                        <div class="restaurant__br__nouveau nouveau">Nouveau</div>
-                                        <div class="note_enchante_img">
-                                                <img src="./img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
+                        <div class="note_enchante restaurant__br">
+                                <a class="restaurant__br__liens" href="./menu/note_enchante.html">
+                                        <div class="restaurant__br__liens__nouveau nouveau">Nouveau</div>
+                                        <div class="restaurant__br__liens__palette__img">
+                                                <img class="restaurant__img restaurant__br__liens__palette__img--img" src="./img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
                                         </div>
-                                        <div class="note_enchante">
+                                        <div class="palette_text">
                                                 <p>La note enchantée <br>
                                                 Charonne
                                                 </p>
@@ -81,11 +87,11 @@
                                 </a>
                         </div>
 
-                        <div class="francais">
-                                <a class="liens" href="./menu/francaise.html">
-                                        <div class="restaurant__br__nouveau nouveau">Nouveau</div>
-                                        <div class="francais_img">
-                                                <img src="./img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
+                        <div class="francais restaurant__br">
+                                <a class="restaurant__br__liens" href="./menu/francaise.html">
+                                        <div class="restaurant__br__liens__nouveau nouveau">Nouveau</div>
+                                        <div class="restaurant__br__liens__palette__img">
+                                                <img class="restaurant__img restaurant__br__liens__palette__img--img" src="./img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
                                         </div>
                                         <div class="palette_text">
                                                 <p>A la francais<br>
@@ -98,11 +104,11 @@
                                 </a>
                         </div>
 
-                        <div class="palette">
-                                <a class="liens" href="./menu/delice_des_sens.html">
-                                        <div class="restaurant__br__nouveau nouveau">Nouveau</div>
-                                        <div class="palette__img">
-                                                <img src="./img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
+                        <div class="palette restaurant__br">
+                                <a class="restaurant__br__liens" href="./menu/delice_des_sens.html">
+                                        <div class="restaurant__br__liens__nouveau nouveau">Nouveau</div>
+                                        <div class="palette__img restaurant__br__liens__palette__img">
+                                                <img class="restaurant__img restaurant__br__liens__palette__img--img" src="./img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
                                         </div>
                                         <div class="palette_text">
                                                 <p>Le délis des sens<br>
@@ -116,6 +122,13 @@
                         </div>
                 </section>
         </main> 
-        <iframe src="./header_footer/footer.html" frameborder="0"></iframe>     
+        <!-- <iframe src="./header_footer/footer.html" frameborder="0"></iframe>      -->
+        <footer class="footer">
+                <h3 class="footer__title">ohmyfood</h3>
+                 <i class="fas fa-utensils"></i>Proposer un restaurant <br>
+                 <i class="fas fa-hands-helping t"></i>Devenir partenaire <br>
+                 Mentions légales <br>
+                 Contact
+         </footer>
 </body>
 </html>   

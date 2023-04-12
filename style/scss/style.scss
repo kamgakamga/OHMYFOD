@@ -24,7 +24,7 @@ a{
         font-family: 'Shrikhand', cursive;
 }
 
-img {
+.restaurant__img{
         object-fit: cover;
         object-position: center;
         width: 100%;
@@ -110,25 +110,49 @@ body{
 }
 .restaurant{
         background-color:$couleur_grise;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         .restaurant__br{
                 border-radius: 15px;
-                background-color:$couleur_blanche;
-                &__nouveau{
-                        background-color: $couleur_tertiaire;
-                        display: inline-block;
-                        padding: 10px;
+                background-color:$couleur_secondaire;
+                margin: 30px;
+                .restaurant__br__liens{
+                        &__nouveau{
+                                background-color: $couleur_tertiaire;
+                                display: inline-block;
+                                padding: 6px 12px ;
+                                border-radius: 3px;
+                                color: rgb(45, 132, 45);
+                                font-weight: 600;
+                        }
                 }
+                
         }
         .palette_text{
+                margin-top: -4px;
+                padding: 20px 15px 20px 15px;
+                background-color: $couleur_blanche;
+                border-radius: 0px 0px 15px 15px;
                 display: flex;
                 justify-content: space-between;
+                .palette_heart{
+                        font-size: 30px;
+                }
         }
 }
-.liens{
+.restaurant__br__liens{
         position: relative;
-        .nouveau{
+        .restaurant__br__liens__nouveau{
                 position: absolute;
-                top: 5px;
-                right: 10px;
+                top: 15px;
+                right: 15px;
+        }
+
+        .restaurant__br__liens__palette__img{
+                margin: 0;
+                .restaurant__br__liens__palette__img--img{
+                        border-radius: 15px 15px 0 0;
+                }   
         }
 }

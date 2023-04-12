@@ -1,6 +1,15 @@
-.footer {
-  background-color: black;
+.header {
+  background-color: #FFFFFF;
+  padding: 10px 0;
   color: beige;
+}
+.header__logo {
+  display: flex;
+  justify-content: center;
+}
+.header__logo__img {
+  width: 30%;
+  max-width: 30%;
 }
 
 /*# sourceMappingURL=header.css.map */
