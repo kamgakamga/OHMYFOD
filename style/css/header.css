@@ -1,7 +1,12 @@
 .header {
+  display: flex;
+  justify-content: space-around;
   background-color: #FFFFFF;
   padding: 10px 0;
   color: beige;
+}
+.header__span {
+  color: #000;
 }
 .header__logo {
   display: flex;
